@@ -1,0 +1,29 @@
+.burger{
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    div{
+        height: .2rem;
+        border-radius: .4rem;
+        background-color: #FFF;
+        transition: all .2s ease-in;
+   }
+}
+
+.open{
+        :nth-child(1){
+            transform: rotate(45deg) translate(5px, 10px);
+        }
+        :nth-child(2){
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        :nth-child(3){
+            transform: rotate(-45deg) translate(5px, -10px);
+        }    
+}
+

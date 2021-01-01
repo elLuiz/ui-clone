@@ -1,0 +1,44 @@
+@media(min-width:1000px){
+    .spotify-nav{
+        .logo{
+            margin-left: 6rem;
+            img{
+
+                width: 10rem;
+                height: 3rem;
+            }
+        }
+    }
+    .burger{
+        display: none;
+    }
+
+    .navigation-options{
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: flex-end !important;
+        position: initial !important;
+        top: unset !important;
+        right: unset !important;
+        transform: unset !important;
+        transition: unset !important;
+        .options{
+            flex-grow: 0 !important;
+            justify-content: space-around !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            width: 50%;
+            height: inherit;
+            margin-top: 0 !important;
+            font-size: 1rem !important;
+            .pipe{
+                &::after{
+                    content: "|" !important;
+                }
+            }
+        }
+        .logo{
+            display: none;
+        }
+    }   
+}
