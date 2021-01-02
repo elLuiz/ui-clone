@@ -1,0 +1,81 @@
+@import '../../DefaultProps/variables';
+$explore-btn-color: $color-text-banner-primary;
+
+.spotify-section{
+    width: 100vw;
+    min-height: 27rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    text-align: center;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        padding: 0 1rem;
+        width: 100%;
+        .col-left, .col-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            width: 100%;
+        }
+    }
+
+    .col-left{
+        .section-title{
+            font: lighter .9rem Montserrat, sans-serif;
+            letter-spacing: 0.1em;
+            margin-bottom: .8rem;
+        }
+    
+    }
+
+    .col-right{
+        h4{
+            font: 600 2rem Montserrat, sans-serif;
+            line-height: 2rem;
+            letter-spacing: -0.04em;
+            max-width: 16.5rem;
+            margin-bottom: 1rem;
+            max-width: 16.5rem;
+        }
+        .description{
+            font: 400 .8rem Montserrat, sans-serif;
+            line-height: 1.25rem;
+            max-width: 18rem;
+            letter-spacing: initial;
+            margin-bottom: 1rem;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 3rem;
+            background-color: $explore-btn-color;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 2rem;
+            font: 600 .8rem Montserrat, sans-serif;
+            letter-spacing: .1rem;
+            color: $color-text-btn;
+
+            &:hover{
+                transform: scale(1.1);
+                background-color: #fff;
+            }
+        }
+    }
+
+ }
+
+.explore-wrapped{
+    background-color: $background-color-primary;
+    color: $color-text-banner-primary;
+}
+
+@import './gradient-graphic';

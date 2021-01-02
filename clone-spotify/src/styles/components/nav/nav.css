@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   padding: 0.2rem 0.5rem;
-  height: 5rem;
+  height: 3.4rem;
 }
 .spotify-nav .logo {
   flex-grow: 1;
@@ -20,13 +20,14 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 2rem;
   background-color: black;
-  width: 100vw;
+  width: 27rem;
   height: 100%;
   position: fixed;
   top: 0rem;
   right: 0;
+  z-index: 1;
   transform: translateX(150%);
   transition: transform 0.2s ease-in-out;
 }
@@ -36,17 +37,25 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  font: 500 1.5rem Poppins;
+  font: 700 1.8rem Montserrat, sans-serif;
+  line-height: 1.5;
   letter-spacing: 0;
+}
+.spotify-nav .navigation-options .options li {
+  margin-bottom: 1rem;
 }
 .spotify-nav .navigation-options .options li:hover:not(.pipe) {
   cursor: pointer;
   color: #1DB954;
 }
-.spotify-nav .navigation-options .options .pipe::after {
-  content: "-";
+.spotify-nav .navigation-options .options .pipe {
+  width: 1.5rem;
+  height: 0.12rem;
+  border: 1px solid #FFFF;
+  margin: 1.5rem 0 1.5rem 0;
 }
 .spotify-nav .navigation-options .options .user-action {
+  font: 400 1.4rem Montserrat, sans-serif;
   color: #d9dadc;
 }
 .spotify-nav .navigation-options-open {
@@ -55,14 +64,13 @@
 
 .burger {
   z-index: 1;
-  width: 2rem;
-  height: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   cursor: pointer;
 }
 .burger div {
+  margin: 0.15rem 0;
+  width: 1.3rem;
   height: 0.2rem;
   border-radius: 0.4rem;
   background-color: #FFF;
@@ -70,17 +78,20 @@
 }
 
 .open :nth-child(1) {
-  transform: rotate(45deg) translate(5px, 10px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 .open :nth-child(2) {
   opacity: 0;
   transform: translateX(-20px);
 }
 .open :nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -10px);
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 @media (min-width: 1000px) {
+  .spotify-nav {
+    height: 5rem;
+  }
   .spotify-nav .logo {
     margin-left: 6rem;
   }
@@ -98,6 +109,8 @@
     align-items: center;
     justify-content: flex-end !important;
     position: initial !important;
+    padding: 0.2rem 0.4rem !important;
+    width: 100vw !important;
     top: unset !important;
     right: unset !important;
     transform: unset !important;
@@ -113,8 +126,16 @@
     margin-top: 0 !important;
     font-size: 1rem !important;
   }
-  .navigation-options .options .pipe::after {
-    content: "|" !important;
+  .navigation-options .options li {
+    margin: unset !important;
+  }
+  .navigation-options .options .pipe {
+    width: 1rem;
+    margin: 0 0.5rem 0 0.5rem !important;
+    transform: rotate(90deg);
+  }
+  .navigation-options .options .user-action {
+    font-size: 1rem !important;
   }
   .navigation-options .logo {
     display: none;

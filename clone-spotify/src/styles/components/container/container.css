@@ -1,0 +1,94 @@
+.spotify-section {
+  width: 100vw;
+  min-height: 27rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.spotify-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0 1rem;
+  width: 100%;
+}
+.spotify-section .content .col-left, .spotify-section .content .col-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.spotify-section .col-left .section-title {
+  font: lighter 0.9rem Montserrat, sans-serif;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+.spotify-section .col-right h4 {
+  font: 600 2rem Montserrat, sans-serif;
+  line-height: 2rem;
+  letter-spacing: -0.04em;
+  max-width: 16.5rem;
+  margin-bottom: 1rem;
+  max-width: 16.5rem;
+}
+.spotify-section .col-right .description {
+  font: 400 0.8rem Montserrat, sans-serif;
+  line-height: 1.25rem;
+  max-width: 18rem;
+  letter-spacing: initial;
+  margin-bottom: 1rem;
+}
+.spotify-section .col-right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 3rem;
+  background-color: #A5FFF8;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2rem;
+  font: 600 0.8rem Montserrat, sans-serif;
+  letter-spacing: 0.1rem;
+  color: #cb1582;
+}
+.spotify-section .col-right a:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+.explore-wrapped {
+  background-color: #cb1582;
+  color: #A5FFF8;
+}
+
+.gradient-graphic {
+  position: relative;
+  margin: 0 auto;
+  width: 11.25rem;
+  height: 6.25rem;
+  background: linear-gradient(359.37deg, #000 3.09%, #FF4632 22.4%, #FAE62D 46.64%, #9BF0E1 62.15%, #A0C3D2 79.91%, #4100F5 99.49%);
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+  background-position: 0 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+}
+.gradient-graphic .graphic-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #A5FFF8;
+}
+.gradient-graphic .graphic-title h4 {
+  font: 700 1.2rem Montserrat, sans-serif;
+  color: #cb1582;
+}
+
+/*# sourceMappingURL=container.css.map */

@@ -1,0 +1,29 @@
+$banner-color: $color-text-banner-primary;
+$text-color: $background-color-primary;
+.gradient-graphic{
+    position: relative;
+    margin: 0 auto;
+    width: 11.25rem;
+    height: 6.25rem;
+    background: linear-gradient(359.37deg, #000 3.09%, #FF4632 22.4%, #FAE62D 46.64%, #9BF0E1 62.15%, #A0C3D2 79.91%, #4100F5 99.49%);
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    background-position: 0 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    .graphic-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: $banner-color;
+        h4{
+            font: 700 1.2rem Montserrat, sans-serif;
+            color: $background-color-primary;
+            // padding: .8rem;
+        }
+        
+    }
+}
