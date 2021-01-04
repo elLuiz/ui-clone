@@ -1,0 +1,91 @@
+@media(min-width: 1000px){
+    .spotify-section{
+        min-height: 38rem;
+        flex-direction: row !important;
+        .content{
+            flex-direction: row;
+            align-items: end;
+            .gradient-graphic{
+                width: 33.25rem;
+                height: 25.25rem;
+                background-size: 100% 21.25rem;
+                background-position: 0 1.5rem;
+                padding: 0 4rem;
+                .graphic-title{
+                    align-items: flex-end;
+                    flex-direction: row;
+                    justify-content: unset;
+                    padding: 2.5rem;
+                    h4{
+                        max-width: 2rem;
+                        font: 600 2.5rem Poppins;
+                        text-align: left;
+                        text-transform: capitalize;
+                        line-height: 4rem;
+                    }
+                }
+            }
+
+            a{
+                width: 50%;
+            }
+   
+        }
+  
+    }
+    .explore-wrapped{
+        .col-left{
+            .section-title{
+                display: none;
+            }
+        }
+
+        .col-right{
+            align-items: flex-start !important;
+            text-align: left;
+            .section-title{
+                display: block;
+            }
+
+            h4{
+                font-size: 3rem;
+                line-height: 4rem;
+                max-width: 19.5rem;
+            }
+
+            .description{
+                font: 500 1rem Montserrat, sans-serif;
+                max-width: 32rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .spotify-free{
+        align-items: baseline;
+        background-position: right center;
+        background-size: auto 100%;
+        .col-left{
+            flex: 1;
+            align-items: start !important;
+            text-align: left;
+            padding: 0 4rem;
+            h4{
+                font-size: 3rem;
+                line-height: 3rem;
+                max-width: 19.5rem;
+            }
+
+            .description{
+                font: 500 1rem Montserrat, sans-serif;
+                max-width: 32rem;
+                margin-bottom: 2rem;
+            }
+            a{
+                width: 20%;
+            }
+   
+
+        }
+    }
+}

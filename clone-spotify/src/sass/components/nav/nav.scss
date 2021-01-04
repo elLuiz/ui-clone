@@ -1,6 +1,7 @@
 @import '../../DefaultProps/variables';
 
 .spotify-nav{
+    z-index: 1;
     background-color: black;
     color: $color-text-primary;
     display: flex;

@@ -1,0 +1,45 @@
+$free-btn-color: #1ED760;
+$free-text-color: #2D46B9;
+@mixin col-left($class) {
+    @if $class == 'spotify-free'{
+        .col-left{
+            h4{
+                font: 600 1.8rem Montserrat, sans-serif;
+                line-height: 2rem;
+                letter-spacing: -0.04em;
+                max-width: 16.5rem;
+                margin-bottom: 1rem;
+                max-width: 16.5rem;
+            }
+            .description{
+                font: 400 .8rem Montserrat, sans-serif;
+                line-height: 1.25rem;
+                max-width: 18rem;
+                letter-spacing: initial;
+                margin-bottom: 1rem;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: 3rem;
+                background-color: $free-btn-color;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 2rem;
+                font: 600 .8rem Montserrat, sans-serif;
+                letter-spacing: .1rem;
+                color: $free-text-color;
+                transition: all .2s ease-in;
+                &:hover{
+                    transform: scale(1.01);
+                    background-color: #fff;
+                }
+            }
+     
+        }   
+    }
+            
+}
+

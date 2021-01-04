@@ -1,14 +1,16 @@
+@use './col-left';
+@use './col-right';
 @import '../../DefaultProps/variables';
 $explore-btn-color: $color-text-banner-primary;
 
 .spotify-section{
     width: 100vw;
-    min-height: 27rem;
+    min-height: 29rem;
     padding-top: 2rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     text-align: center;
     .content{
         display: flex;
@@ -22,60 +24,32 @@ $explore-btn-color: $color-text-banner-primary;
             flex-direction: column;
             align-items: center;    
             width: 100%;
-        }
-    }
-
-    .col-left{
-        .section-title{
-            font: lighter .9rem Montserrat, sans-serif;
-            letter-spacing: 0.1em;
-            margin-bottom: .8rem;
-        }
-    
-    }
-
-    .col-right{
-        h4{
-            font: 600 2rem Montserrat, sans-serif;
-            line-height: 2rem;
-            letter-spacing: -0.04em;
-            max-width: 16.5rem;
-            margin-bottom: 1rem;
-            max-width: 16.5rem;
-        }
-        .description{
-            font: 400 .8rem Montserrat, sans-serif;
-            line-height: 1.25rem;
-            max-width: 18rem;
-            letter-spacing: initial;
-            margin-bottom: 1rem;
-        }
-        a{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            height: 3rem;
-            background-color: $explore-btn-color;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 2rem;
-            font: 600 .8rem Montserrat, sans-serif;
-            letter-spacing: .1rem;
-            color: $color-text-btn;
-
-            &:hover{
-                transform: scale(1.1);
-                background-color: #fff;
+            .section-title{
+                font: 500 .8rem Montserrat, sans-serif;
+                letter-spacing: 0.1em;
+                margin-bottom: 2rem;
             }
+            
         }
     }
-
  }
 
 .explore-wrapped{
     background-color: $background-color-primary;
     color: $color-text-banner-primary;
+    @include col-left.col-left("explore");
+    @include col-right.col-right(col-right,$explore-btn-color ,$background-color-primary);
 }
 
+.spotify-free{
+    background-color: $background-color-secondary;
+    background-image: url('../../../assets/background.svg');
+    background-repeat: no-repeat;
+    background-size: auto 160%;
+    background-position: center center;
+    color: $color-text-banner-secondary;
+    @include col-left.col-left("spotify-free");
+}
+
+@import './responsive';
 @import './gradient-graphic';
