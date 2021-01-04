@@ -1,0 +1,19 @@
+@import '../../DefaultProps/variables';
+$background-color:black;
+
+.spotify-footer{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    background-color: $background-color;
+    .logo-wrapper{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2.5rem;
+        img{
+            width: 30%;
+            height: 2rem;
+        }
+    }
+    @import './footer_column';
+    @import './footer_social_medias';
+}

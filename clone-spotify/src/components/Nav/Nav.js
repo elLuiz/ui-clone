@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import '../../styles/components/nav/nav.css';
 import spotifylogo from '../../assets/spotify-logo.svg';
 import Burger from './Burger';
 import NavOptions from './NavOptions';
+import useSticky from '../../hooks/useSticky';
 
-export default function Nav() {
+const Nav = ()=>{
     const [open, setOpen] = useState(false);
+    const scroll = useSticky();
 
     return (
-        <nav className="spotify-nav">
+        <nav className={scroll ? "spotify-nav sticky-bar": "spotify-nav"}>
             <a href="/" className="logo">
                 <img src={spotifylogo} alt="Spotify" />
             </a>
@@ -29,3 +31,5 @@ export default function Nav() {
         </nav>
     )
 }
+
+export default React.memo(Nav);

@@ -1,7 +1,6 @@
 @import '../../DefaultProps/variables';
 
 .spotify-nav{
-    z-index: 1;
     background-color: black;
     color: $color-text-primary;
     display: flex;
@@ -18,7 +17,32 @@
         }
     }
     @import './navoptions';
+}
 
+.sticky-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    animation: fadeInBar .2s ease-in;
+    -webkit-animation: fadeInBar .2s ease-in;
+}
+
+@keyframes fadeInBar{
+    from{
+        top: -1rem;
+    }to{
+        top: 0;
+    }
+}
+
+@-webkit-keyframes fadeInBar{
+    from{
+        top: -1rem;
+    }to{
+        top: 0;
+    }
 }
 
 @import './burger';

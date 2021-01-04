@@ -2,6 +2,13 @@ import Nav from "./components/Nav/Nav";
 import Container from "./components/Container/Container";
 import Col from "./components/Container/Col";
 import Wrapper from "./components/Container/Wrapper";
+import Footer from "./components/Footer/Footer";
+import logo from './assets/spotify-logo.svg';
+import FooterColumn from "./components/Footer/FooterColumn";
+import SocialMedia from "./components/Footer/SocialMedia";
+import instagram from './assets/instagram.svg';
+import facebook from './assets/facebook.svg';
+import twitter from './assets/twitter.svg';
 
 function App() {
   return (
@@ -40,7 +47,39 @@ function App() {
               </Col>
           </Container>
         </Wrapper>
+        <Footer>
+            <div className="logo-wrapper">
+                <a href="/">
+                  <img src={logo} alt="Spotify" />
+                </a>
+            </div>
+            <FooterColumn columnTitle="Company"  links={[
+              {"label": "About", "url": "https://www.spotify.com/us/about-us/contact/"},
+              {"label": "Jobs", "url": "https://www.spotifyjobs.com/?_ga=2.159642045.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "For the Record", "url": "https://newsroom.spotify.com/?_ga=2.163640767.1255414698.1609760985-1508976841.1602156782"}
+            ]}/>
 
+            <FooterColumn columnTitle="Communities"  links={[
+              {"label": "For Artists", "url": "https://artists.spotify.com/?_ga=2.222417307.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "Developers", "url": "https://developer.spotify.com/?_ga=2.222417307.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "Advertising", "url": "https://ads.spotify.com/?_ga=2.222417307.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "Investors", "url": "https://investors.spotify.com/?_ga=2.159428669.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "Vendors", "url": "https://spotifyforvendors.com/"}
+            ]}/>
+            
+            <FooterColumn columnTitle="Useful Links" links={[
+              {"label": "Support", "url": "https://support.spotify.com/?_ga=2.236509569.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "Web Player", "url": "https://open.spotify.com/?_ga=2.236509569.1255414698.1609760985-1508976841.1602156782"},
+              {"label": "Free Mobiles App", "url": "https://www.spotify.com/us/free/"},
+              {"label": "2020 Wrapped", "url": "https://www.spotify.com/us/wrapped/"}
+            ]}/>
+            
+            <SocialMedia socialMedias={[
+              {"social": "Instagram", "logo": instagram ,"link": "https://instagram.com/spotify"},
+              {"social": "Twitter", "logo": twitter,"link": "https://twitter.com/spotify"},  
+              {"social": "Facebook", "logo": facebook,"link": "https://www.facebook.com/Spotify"}
+            ]}/>
+        </Footer>
     </div>
   );
 }

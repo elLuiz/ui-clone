@@ -1,6 +1,6 @@
-@media(min-width: 1000px){
+@media(min-width: 1170px){
     .spotify-section{
-        min-height: 38rem;
+        min-height: 37rem;
         flex-direction: row !important;
         .content{
             flex-direction: row;
@@ -63,13 +63,14 @@
 
     .spotify-free{
         align-items: baseline;
+        background-image: url('../../../assets/background-desktop.svg');
         background-position: right center;
         background-size: auto 100%;
         .col-left{
             flex: 1;
             align-items: start !important;
             text-align: left;
-            padding: 0 4rem;
+            padding: 2rem 4rem;
             h4{
                 font-size: 3rem;
                 line-height: 3rem;

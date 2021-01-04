@@ -1,0 +1,31 @@
+$title: #919496;
+
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    .title{
+        color: $title;
+        text-transform: uppercase;
+        font: 700 .79rem Montserrat, sans-serif;
+        letter-spacing: .04rem;
+        margin-bottom: 1rem;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li{
+            margin-bottom: 1rem;
+            a{
+                color: $color-text-primary;    
+                text-decoration: none;
+                font: 400 .9rem Montserrat, sans-serif;
+
+                &:hover{
+                    color: $color-text-on-hover;
+                }
+            }
+        }
+    }
+}

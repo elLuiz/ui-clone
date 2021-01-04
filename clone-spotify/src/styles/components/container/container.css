@@ -113,9 +113,9 @@
   background-color: #fff;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1170px) {
   .spotify-section {
-    min-height: 38rem;
+    min-height: 37rem;
     flex-direction: row !important;
   }
   .spotify-section .content {
@@ -169,6 +169,7 @@
 
   .spotify-free {
     align-items: baseline;
+    background-image: url("../../../assets/background-desktop.svg");
     background-position: right center;
     background-size: auto 100%;
   }
@@ -176,7 +177,7 @@
     flex: 1;
     align-items: start !important;
     text-align: left;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
   }
   .spotify-free .col-left h4 {
     font-size: 3rem;
