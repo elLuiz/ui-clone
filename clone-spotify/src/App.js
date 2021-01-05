@@ -9,6 +9,7 @@ import SocialMedia from "./components/Footer/SocialMedia";
 import instagram from './assets/instagram.svg';
 import facebook from './assets/facebook.svg';
 import twitter from './assets/twitter.svg';
+import LanguageFooter from "./components/Footer/LanguageFooter";
 
 function App() {
   return (
@@ -79,7 +80,20 @@ function App() {
               {"social": "Twitter", "logo": twitter,"link": "https://twitter.com/spotify"},  
               {"social": "Facebook", "logo": facebook,"link": "https://www.facebook.com/Spotify"}
             ]}/>
-        </Footer>
+            <LanguageFooter />
+            <FooterColumn className="flex-row" columnTitle="" links={[
+              {"label": "Legal", "url": "https://www.spotify.com/us/legal/"},
+              {"label": "Privacy Center", "url": "https://www.spotify.com/us/privacy/"},
+              {"label": "Privacy Policy", "url": "https://www.spotify.com/us/legal/privacy-policy/"},
+              {"label": "Cookies", "url": "https://www.spotify.com/us/legal/cookies-policy/"},
+              {"label": "About Ads", "url": "https://www.spotify.com/us/legal/privacy-policy/#s3"},
+              {"label": "Additional CA Privacy Disclosures", "url": "https://www.spotify.com/us/legal/California-privacy-disclosure/"}
+            ]} >
+              <div className="spotify-copyright">
+                  <p>&#169; Spotify AB</p>
+              </div>
+            </FooterColumn>
+            </Footer>
     </div>
   );
 }

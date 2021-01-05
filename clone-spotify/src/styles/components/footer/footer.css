@@ -40,6 +40,34 @@
 .spotify-footer .column ul li a:hover {
   color: #1DB954;
 }
+.spotify-footer .flex-row {
+  width: 100%;
+  flex-direction: row;
+  padding: 0 0.5rem 0 0;
+}
+.spotify-footer .flex-row ul {
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.spotify-footer .flex-row ul li {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+.spotify-footer .flex-row ul li a {
+  color: #919496;
+  font-size: 0.6rem;
+}
+.spotify-footer .flex-row .spotify-copyright {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  justify-content: flex-end;
+}
+.spotify-footer .flex-row .spotify-copyright p {
+  font: 400 0.58rem Montserrat, sans-serif;
+  color: #919496;
+}
 .spotify-footer .social-media-column {
   display: flex;
   align-items: center;
@@ -58,6 +86,7 @@
 .spotify-footer .social-media-column a:hover {
   color: #1DB954;
   flex-direction: column;
+  text-decoration: none;
 }
 .spotify-footer .social-media-column a:hover span::after {
   position: relative;
@@ -65,11 +94,11 @@
   right: -2rem;
   content: attr(data-social);
   width: 1rem;
-  height: 0.5rem;
+  height: 0.3rem;
   background-color: black;
   color: #FFFF;
   border: 1px solid #FFFF;
-  padding: 0.5rem;
+  padding: 0.3rem;
   text-decoration: unset;
 }
 .spotify-footer .social-media-column a span {
@@ -77,6 +106,56 @@
   height: 1.5rem;
   margin: 0;
   display: block;
+}
+.spotify-footer .language-footer {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  justify-content: flex-end;
+  height: 1.5rem;
+  background-color: black;
+  color: #919496;
+  font: 500 0.7rem Montserrat, sans-serif;
+  margin-bottom: 1rem;
+}
+.spotify-footer .language-footer p {
+  margin-right: 0.5rem;
+}
+.spotify-footer .language-footer p:hover {
+  cursor: pointer;
+  color: #1DB954;
+}
+
+@media (min-width: 1170px) {
+  .spotify-footer {
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .spotify-footer .logo-wrapper {
+    width: 10rem;
+  }
+  .spotify-footer .logo-wrapper img {
+    width: 80% !important;
+    height: 3rem !important;
+  }
+  .spotify-footer .social-media-column {
+    align-items: flex-start;
+  }
+  .spotify-footer .language-footer {
+    width: 100%;
+  }
+  .spotify-footer .flex-row {
+    width: 95%;
+  }
+  .spotify-footer .flex-row ul li a {
+    font-size: 0.7rem;
+  }
+  .spotify-footer .flex-row .spotify-copyright p {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,36 @@
+@media(min-width:1170px){
+    .spotify-footer{
+        height: 70vh;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .logo-wrapper{
+            width: 10rem;
+            img{
+                width: 80% !important;
+                height: 3rem !important;
+            }
+        }
+        .social-media-column{
+            align-items: flex-start;
+        }
+        .language-footer{
+            width: 100%;
+        }
+        .flex-row{
+            width: 95%;
+            ul{
+                li{
+                    a{
+                        font-size: .7rem;
+                    }
+                }
+            }
+            .spotify-copyright{
+                p{
+                    font-size: .8rem;
+                }
+            }
+       }
+    }   
+}

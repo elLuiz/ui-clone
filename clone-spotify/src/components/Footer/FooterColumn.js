@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function FooterColumn({columnTitle, links}) {
+function FooterColumn({columnTitle, links, className, children}) {
     return (
-        <div className="column">
+        <div className={"column " + className}>
             <p className="title">{columnTitle}</p>
             <ul>
                 {      
@@ -12,14 +12,16 @@ function FooterColumn({columnTitle, links}) {
                     ))
                 }
             </ul>
-
+            {children}
         </div>
     )
 }
 
 FooterColumn.propTypes = {
     columnTitle: PropTypes.string.isRequired,
-    links: PropTypes.array.isRequired
+    links: PropTypes.array.isRequired,
+    className: PropTypes.string,
+    children: PropTypes.node
 }
 
 export default FooterColumn

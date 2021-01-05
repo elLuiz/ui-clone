@@ -1,0 +1,19 @@
+.language-footer{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    justify-content: flex-end;
+    height: 1.5rem;
+    background-color: black;
+    color: $color-text-secondary;
+    font: 500 .7rem Montserrat, sans-serif;
+    margin-bottom: 1rem;
+    p{
+        margin-right: .5rem;
+        &:hover{
+            cursor: pointer;
+            color: $color-text-on-hover;
+        }
+    }
+}
