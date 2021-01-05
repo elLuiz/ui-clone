@@ -20,8 +20,8 @@ const Nav = ()=>{
                     {"className": "default", "option":"Support"},
                     {"className": "default", "option":"Download"},
                     {"className": "pipe", "option":""},
-                    {"className": "user-action", "option":"Sign up"},
-                    {"className": "user-action", "option":"Log in"}
+                    {"className": "user-action", "url": "/signup","option":"Sign up"},
+                    {"className": "user-action", "url": "/login","option":"Log in"}
                 ]}>
                     <a href="/" className="logo">
                         <img src={spotifylogo} alt="Spotify" />

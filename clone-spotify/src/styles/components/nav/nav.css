@@ -44,7 +44,11 @@
 .spotify-nav .navigation-options .options li {
   margin-bottom: 1rem;
 }
-.spotify-nav .navigation-options .options li:hover:not(.pipe) {
+.spotify-nav .navigation-options .options li a {
+  text-decoration: none;
+  color: #FFFF;
+}
+.spotify-nav .navigation-options .options li a:hover:not(.pipe) {
   cursor: pointer;
   color: #1DB954;
 }

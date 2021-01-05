@@ -24,11 +24,16 @@
         letter-spacing: 0;
         li{
             margin-bottom: 1rem;
-            &:hover{
-                &:not(.pipe){
-                    cursor: pointer;
-                    color: $color-text-on-hover;
+            a{
+                text-decoration: none;
+                color: $color-text-primary;
+                &:hover{
+                    &:not(.pipe){
+                        cursor: pointer;
+                        color: $color-text-on-hover;
+                    }
                 }
+             
             }
         }
         .pipe{

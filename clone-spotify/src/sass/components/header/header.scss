@@ -1,0 +1,17 @@
+@import '../../DefaultProps/variables';
+.spotify-header{
+    height: 4rem;
+    padding-top: .2rem;
+    border: 1px solid $border-color;
+    margin-bottom: 1rem;
+    .spotify-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 8rem;
+        }
+    }
+}

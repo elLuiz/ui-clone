@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const NavOptions = ({options, children, open})=>{
     return (
@@ -7,7 +8,7 @@ const NavOptions = ({options, children, open})=>{
         <ul className="options">
             {
                 options.map((option) => 
-                    <li key={option.option} className={option.className}>{option.option}</li>
+                    <li key={option.option} className={option.className}><Link to={option.url}>{option.option}</Link></li>
                 )
             }
         </ul>
