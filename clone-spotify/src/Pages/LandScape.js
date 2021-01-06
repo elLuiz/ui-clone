@@ -16,7 +16,7 @@ function Landscape() {
     <div className="App">
         <Nav />
         <Wrapper>
-          <Container className="explore-wrapped">
+          <Container className="spotify-section explore-wrapped">
               <Col 
                 sectionTitle="2020 WRAPPED"
                 className="col-left"
@@ -37,7 +37,7 @@ function Landscape() {
                 <a href="/">EXPLORE YOUR WRAPPED</a>
               </Col>
           </Container>
-          <Container className="spotify-free">
+          <Container className="spotify-section spotify-free">
               <Col
                 sectionTitle="SPOTIFY FREE"
                 className="col-left"

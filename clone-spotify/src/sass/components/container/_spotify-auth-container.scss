@@ -1,0 +1,40 @@
+.spotify-auth-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  .row{
+        .col-12{
+            width: 100%;
+        }
+        .divider{
+            width: 100%;
+            display: block;
+            line-height: 0;
+            margin: 1rem 0;
+            text-align: center;
+            border-top: 1px solid $border-color;
+            position: relative;
+
+            strong{
+                background-color: #ffffff;
+                padding: 0 1rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: .85rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1000px){
+    .row{
+        align-items: flex-start !important;
+        width: 50vw !important;
+
+        .col-12{
+            display: flex;
+        }
+    }
+}

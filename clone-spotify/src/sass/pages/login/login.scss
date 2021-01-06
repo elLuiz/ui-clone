@@ -1,0 +1,28 @@
+@import '../../DefaultProps/variables';
+
+.third-party-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        font: 700 .9rem Poppins, sans-serif;
+        margin-bottom: .5rem;
+    }
+}
+
+.forgot-password{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: $color-text-tertiary;
+    font: 600 1rem Montserrat, sans-serif;
+}
+
+.sign-up-option{
+    margin-top: 1rem;
+    padding-top: .5rem;
+    justify-content: space-around;
+    h3{
+        font: 700 1rem Montserrat, sans-serif;
+        margin-bottom: 1.2rem;
+    }
+}

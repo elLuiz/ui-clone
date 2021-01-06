@@ -1,6 +1,5 @@
-.spotify-section {
+.container {
   width: 100vw;
-  min-height: 29rem;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   display: flex;
@@ -8,7 +7,7 @@
   align-items: center;
   text-align: center;
 }
-.spotify-section .content {
+.container .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,16 +15,19 @@
   padding: 0 1rem;
   width: 100%;
 }
-.spotify-section .content .col-left, .spotify-section .content .col-right {
+.container .content .col-left, .container .content .col-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.spotify-section .content .col-left .section-title, .spotify-section .content .col-right .section-title {
+.container .content .col-left .section-title, .container .content .col-right .section-title {
   font: 500 0.8rem Montserrat, sans-serif;
   letter-spacing: 0.1em;
   margin-bottom: 2rem;
+}
+.container .row {
+  width: 100%;
 }
 
 .explore-wrapped {
@@ -113,6 +115,46 @@
   background-color: #fff;
 }
 
+.spotify-section {
+  min-height: 29rem;
+}
+
+.spotify-auth-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.spotify-auth-container .row .col-12 {
+  width: 100%;
+}
+.spotify-auth-container .row .divider {
+  width: 100%;
+  display: block;
+  line-height: 0;
+  margin: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #d9dadc;
+  position: relative;
+}
+.spotify-auth-container .row .divider strong {
+  background-color: #ffffff;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 1000px) {
+  .row {
+    align-items: flex-start !important;
+    width: 50vw !important;
+  }
+  .row .col-12 {
+    display: flex;
+  }
+}
 @media (min-width: 1170px) {
   .spotify-section {
     min-height: 37rem;

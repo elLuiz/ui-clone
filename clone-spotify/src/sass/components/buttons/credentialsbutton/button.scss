@@ -1,0 +1,40 @@
+@import '../../../DefaultProps/variables';
+.btn{
+    padding: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    letter-spacing: 0.1rem;
+    background-color: $btn-color-secondary;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-btn{
+    width: 100%;
+    transition: background-color .1s ease-out;
+
+    &:hover{
+        background-color: lighten($color: $btn-color-secondary, $amount: 10%);
+    }
+}
+
+.sign-up{
+    background-color: #FFF;
+    color: $color-text-tertiary;
+    border: 2px solid black;
+    &:hover{
+        border: none;
+        background-color: #616467;
+        color: $color-text-primary;
+    }
+
+}
+
+@media(min-width: 1000px){
+    .auth-btn{
+        width: 100%;
+    }
+}

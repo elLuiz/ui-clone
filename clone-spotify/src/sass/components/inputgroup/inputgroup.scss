@@ -1,0 +1,33 @@
+@import '../../DefaultProps/variables';
+
+.input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: .5rem;
+    label{
+        font: 700 .95rem Montserrat, sans-serif;
+        margin-bottom: .5rem;
+    }
+    .input{
+        width: 100%;
+        height: 2.5rem;
+        padding: .7rem;
+        border: 1px solid $border-color;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: .2rem;
+        &:focus{
+            outline: none;
+            border: 1px solid $border-color-secondary;
+        }
+    }
+    .error-input{
+        padding: .1rem;
+        p{
+            color: $color-text-danger;
+            font: 600 .9rem Montserrat, sans-serif;
+        }
+    }   
+}

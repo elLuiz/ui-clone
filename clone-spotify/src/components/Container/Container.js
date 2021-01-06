@@ -4,7 +4,7 @@ import '../../styles/components/container/container.css';
 
 function Container({className, children}) {
     return (
-        <section className={"spotify-section " + className}>
+        <section className={"container " + className}>
             <div className="content">
                 {children}
             </div>

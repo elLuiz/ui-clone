@@ -3,9 +3,8 @@
 @import '../../DefaultProps/variables';
 $explore-btn-color: $color-text-banner-primary;
 
-.spotify-section{
+.container{
     width: 100vw;
-    min-height: 29rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     display: flex;
@@ -32,7 +31,10 @@ $explore-btn-color: $color-text-banner-primary;
             
         }
     }
- }
+    .row{
+        width: 100%;
+    }
+}
 
 .explore-wrapped{
     background-color: $background-color-primary;
@@ -51,5 +53,7 @@ $explore-btn-color: $color-text-banner-primary;
     @include col-left.col-left("spotify-free");
 }
 
+@import './spotify-section';
+@import './spotify-auth-container';
 @import './responsive';
 @import './gradient-graphic';
