@@ -2,7 +2,7 @@
 
 This project has education purposes only. 
 
-The spotify website was cloned using ReactJS [Spotify](https://www.spotify.com/).
+The [Spotify](https://www.spotify.com/) website was cloned using ReactJS.
 
 ## Stack
 - React JS
